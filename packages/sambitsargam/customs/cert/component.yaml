@@ -1,0 +1,24 @@
+name: cert
+author: sambitsargam
+version: 0.1.0
+type: custom
+description: The Crypto-Enhanced AI Risk Assessment Tool (CERT). It integrates AI-powered
+  sentiment analysis, technical indicator checks, on-chain data integration, and predictive
+  forecasting to produce a comprehensive risk assessment report.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: bafybeibkrvsewv5ypdlvbvstd5voivjo5mslnlc6t2n7ukxlb5ds7dhnpa
+  cert.py: bafybeig2u7hhlhubahzrbnvyiwf6dyzsosvjmaml3fzwwcxflux5fgdza4
+fingerprint_ignore_patterns: []
+entry_point: cert.py
+callable: run
+dependencies:
+  pydantic:
+    version: '>=1.9.0,<3'
+  openai:
+    version: ==1.30.2
+  requests:
+    version: '>=2.25.0'
+  web3:
+    version: <7,>=6.0.0
